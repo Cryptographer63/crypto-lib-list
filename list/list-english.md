@@ -102,5 +102,4 @@ C++
 
   blockchain-crypto-mpc is an open source library published by Unbound Security that provides cryptographic foundations to solve one of the most difficult challenges associated with crypto assets and blockchain applications. Protects cryptographic signature keys and seed secrets.
 
-*** Translated with www.DeepL.com/Translator (free version) ***
 
