@@ -4,11 +4,11 @@ C/C++
 
 - PBC Library：https://crypto.stanford.edu/pbc/
 
-PBC (Pairing-Based Cryptography)  库是一个建立在GMP库上的免费C库（在GNU Lesser General Public License下发布），用于执行基于配对的密码系统的数学运算。
+  PBC (Pairing-Based Cryptography)  库是一个建立在GMP库上的免费C库（在GNU Lesser General Public License下发布），用于执行基于配对的密码系统的数学运算。
 
 - NaCl: http://nacl.cr.yp.to/ 
 
-NaCl是一个易于使用的高效密码库，用于网络通信、加密、解密、签名等。NaCl的目标是提供建立更高级别的加密工具所需的所有核心操作。由Daniel J. Bernstein亲自设计。   
+  NaCl是一个易于使用的高效密码库，用于网络通信、加密、解密、签名等。NaCl的目标是提供建立更高级别的加密工具所需的所有核心操作。由Daniel J. Bernstein亲自设计。   
 
 - libsodium: https://download.libsodium.org/doc/ 
 
