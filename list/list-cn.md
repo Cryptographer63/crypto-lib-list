@@ -77,11 +77,6 @@ C/C++
 
   微软SEAL是一个易于使用的开源（MIT许可）同态加密库，由微软的密码学和隐私研究小组开发。微软SEAL是用现代标准C++编写的，很容易在许多不同的环境中编译和运行。关于微软SEAL项目的更多信息，见sealcrypto.org。
 
-- blockchain-crypto-mpc：https://github.com/unboundsecurity/blockchain-crypto-mpc
-
-  blockchain-crypto-mpc是一个由Unbound Security发布的开源库，它提供了加密基础，以解决与加密资产和区块链应用相关的最困难的挑战之一。保护加密签名密钥和种子秘密。
-
-持续更新中...
 
  
 Golang
@@ -90,3 +85,15 @@ Golang
 
   Lattigo是一个Go模块，实现了基于Ring-Learning-With-Errors的同态加密原语和基于Multiparty-Homorphic-Encryption的安全协议。该库的特点是。纯粹的Go实现，可以实现跨平台构建，包括为浏览器客户端进行WASM编译。Lattigo旨在支持分布式系统和微服务架构中的HE，由于其自然的并发模型和可移植性，Go是一个常见的选择。
 持续更新中...
+
+
+三、区块链与零知识证明
+C++
+
+- libsnark：https://github.com/scipr-lab/libsnark
+
+  这个库实现了zkSNARK方案，它是一种在零知识中证明/验证计算完整性的密码学方法。
+
+- blockchain-crypto-mpc：https://github.com/unboundsecurity/blockchain-crypto-mpc
+
+  blockchain-crypto-mpc是一个由Unbound Security发布的开源库，它提供了加密基础，以解决与加密资产和区块链应用相关的最困难的挑战之一。保护加密签名密钥和种子秘密。
