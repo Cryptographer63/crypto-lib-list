@@ -14,6 +14,10 @@ C/C++
 
   Sodium是一个可移植的、可跨平台编译的、可安装的、可打包的NaCl分支，具有兼容和扩展API，可以进一步提高可用性。其目标是提供构建更高级加密工具所需的所有核心操作。Sodium 支持多种编译器和操作系统，包括Windows（使用MingW或Visual Studio、x86和x64）、iOS、Android以及Javascript和Webassembly。
 
+- relic: https://github.com/relic-toolkit/relic
+
+  RELIC是一个面向研究的现代密码原语工具箱，强调效率和灵活性。RELIC可用于为特定的安全级别和算法选择建立高效和可用的加密工具包。RELIC实现了椭圆曲线、双线性映射和其它一些密码协议（RSA、Rabin、ECDSA、ECMQV、ECSS（Schnorr）、ECIES、Sakai-Ohgishi-Kasahara基于ID的认证密钥协议、Boneh-Lynn-Schacham和Boneh-Boyen短签名、Paillier和Benaloh同态加密系统等）
+
 - openabe: https://github.com/zeutro/openabe
 
   OpenABE是一个加密库，它集成了各种基于属性的加密（ABE）算法、行业标准的加密功能和工具，以及一个直观的应用编程接口（API）。OpenABE的目的是让开发者将ABE技术无缝地融入到那些受益于ABE的应用中，以保护和控制对敏感数据的访问。OpenABE被设计为易于使用，不要求开发者是加密专家。
