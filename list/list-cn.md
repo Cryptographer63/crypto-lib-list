@@ -1,6 +1,21 @@
 # 一、基础密码库
 
 C/C++
+- Miracl: https://github.com/miracl/MIRACL
+
+  MIRACL Crypto SDK--是一个C语言的多精度整数和有理数加密库，被开发者广泛认为是椭圆曲线密码学（ECC）的黄金标准开源SDK。
+
+- Openssl: https://github.com/openssl/openssl
+
+  OpenSSL是用于传输层安全（TLS）协议（以前称为安全套接字层（SSL）协议）的健壮、商业级、功能齐全的开源工具包。
+
+- NTL: https://libntl.org/doc/tour-intro.html
+
+  NTL 是一个高性能、可移植的C++库，为任意长度的整数；向量、矩阵和整数及有限域上的多项式；以及任意精度的浮点运算提供数据结构和算法。NTL提供高质量的最先进的算法的实现，包括任意长度的整数算术和任意精度的浮点算术。整数和有限域上的多项式算术，包括基本算术、多项式分解、不可还原性测试、最小多项式的计算、轨迹、规范等等。
+
+- cryptopp：https://github.com/weidai11/cryptopp
+
+  cryptoPP是开源的额C++密码学库，集成了非常多的密码算法，相信一定能够找到你想要的那一个算法。
 
 - PBC Library：https://crypto.stanford.edu/pbc/
 
@@ -45,6 +60,9 @@ JAVA
 - JPBC: http://gas.dia.unisa.it/projects/jpbc/#.YpLs7u5BxhE
 
   The Java Pairing-Based Cryptography Library (JPBC)
+- GMSSL: http://gmssl.org/
+
+  GmSSL项目由北京大学关志副研究员的密码学研究组开发维护，项目源码托管于GitHub。是一个开源的密码工具箱，支持SM2/SM3/SM4/SM9/ZUC等国密(国家商用密码)算法、SM2国密数字证书及基于SM2证书的SSL/TLS安全通信协议，支持国密硬件密码设备，提供符合国密规范的编程接口与命令行工具，可以用于构建PKI/CA、安全通信、数据加密等符合国密标准的安全应用。GmSSL项目是OpenSSL项目的分支，并与OpenSSL保持接口兼容。因此GmSSL可以替代应用中的OpenSSL组件，并使应用自动具备基于国密的安全能力。GmSSL项目采用对商业应用友好的类BSD开源许可证，开源且可以用于闭源的商业应用。  
 
 持续更新中...
 
@@ -81,7 +99,9 @@ C/C++
 
   微软SEAL是一个易于使用的开源（MIT许可）同态加密库，由微软的密码学和隐私研究小组开发。微软SEAL是用现代标准C++编写的，很容易在许多不同的环境中编译和运行。关于微软SEAL项目的更多信息，见sealcrypto.org。
 
+- palisade：https://palisade-crypto.org/
 
+  PALISADE是一个开源项目，提供格密码学构建模块和领先的同态加密方案的有效实现。PALISADE是为可用性而设计的，提供更简单的API、模块化、跨平台支持和硬件加速器的集成。 PALISADE符合http://HomomorphicEncryption.org 的同态加密安全标准。
  
 Golang
 
@@ -91,7 +111,7 @@ Golang
 持续更新中...
 
 
-三、区块链与零知识证明
+# 三、区块链与零知识证明
 C++
 
 - libsnark：https://github.com/scipr-lab/libsnark
@@ -101,3 +121,14 @@ C++
 - blockchain-crypto-mpc：https://github.com/unboundsecurity/blockchain-crypto-mpc
 
   blockchain-crypto-mpc是一个由Unbound Security发布的开源库，它提供了加密基础，以解决与加密资产和区块链应用相关的最困难的挑战之一。保护加密签名密钥和种子秘密。
+  
+# 四、量子安全密码
+> 注：很多使用格密码构建的全同态库放在了第二部分，这里不再重复列举。
+
+- liboqs：https://github.com/open-quantum-safe/liboqs
+
+  liboqs是一个用于量子安全加密算法的开放源码C库。量子安全的密钥封装机制（KEM）和数字签名算法的开源实现集合；liboqs是由Douglas Stebila和Michele Mosca领导的开放量子安全（OQS）项目的一部分，该项目旨在开发量子安全加密技术并将其整合到应用程序中，以促进在现实世界中的部署和测试。特别是，OQS通过OpenSSL和OpenSSH提供了将liboqs集成到TLS和SSH的原型。
+
+- rlwekex: https://github.com/dstebila/rlwekex
+
+  该软件基于以下论文中的 Ring LWE 问题实现密钥交换协议：Joppe W. Bos, Craig Costello, Michael Naehrig, Douglas Stebila. Post-quantum key exchange for the TLS protocol from the ring learning with errors problem. In Proc. IEEE Symposium on Security and Privacy (S&P) 2015, pp. 553-570. IEEE, May 2015. DOI:10.1109/SP.2015.40, Eprint http://eprint.iacr.org/2014/599.
