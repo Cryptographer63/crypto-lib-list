@@ -2,6 +2,26 @@
 
 C/C++
 
+- Miracl: https://github.com/miracl/MIRACL
+
+MIRACL Crypto SDK - is a multi-precision integer and rational number encryption library in C, widely considered by developers to be the gold standard open source SDK for elliptic curve cryptography (ECC).
+
+- Openssl: https://github.com/openssl/openssl
+
+OpenSSL is a robust, commercial-grade, full-featured open source toolkit for the Transport Layer Security (TLS) protocol (formerly known as the Secure Sockets Layer (SSL) protocol).
+
+- Tongsuo: https://github.com/Tongsuo-Project/Tongsuo
+
+Copperlock/Tongsuo (formerly BabaSSL) is an open source base cryptographic library providing modern cryptographic algorithms and secure communication protocols, providing underlying cryptographic base capabilities for storage, networking, key management, privacy computing and many other business scenarios, enabling privacy, integrity and authenticatability of data during transmission, use and storage, providing privacy and security during the data lifecycle It provides the ability to protect the privacy and security of data throughout its lifecycle.
+
+- NTL: https://libntl.org/doc/tour-intro.html
+
+NTL is a high-performance, portable C++ library that provides data structures and algorithms for integers of arbitrary length; vectors, matrices and polynomials over integers and finite fields; and floating-point operations of arbitrary precision. NTL provides high-quality, state-of-the-art implementations of algorithms, including integer arithmetic of arbitrary length and floating-point arithmetic of arbitrary precision. Polynomial arithmetic over integers and finite fields, including elementary arithmetic, polynomial decomposition, irreducibility tests, computation of minimal polynomials, trajectories, norms and more.
+
+- cryptopp: https://github.com/weidai11/cryptopp
+
+cryptoPP is an open source frontal C cryptography library that integrates a very large number of cryptographic algorithms, so you are sure to find the one you are looking for.
+
 - PBC Library: https://crypto.stanford.edu/pbc/
 
   The PBC (Pairing-Based Cryptography) library is a free C library built on the GMP library (released under the GNU Lesser General Public License) for performing mathematical operations on pairing-based cryptosystems.
@@ -57,6 +77,19 @@ Python
 
 Continuously updated...
 
+- GoPBC: The PBC Go Wrapper: https://github.com/Nik-U/pbc
+
+The Go Pairing-Based Cryptography Library
+
+- GoFE: https://github.com/fentec-project/gofe
+
+GoFE is a cryptography library that provides implementations of functional cryptography schemes for different SOTAs, in particular FE schemes for linear (e.g. inner product) and quadratic polynomials.
+
+- CONIKS: https://github.com/coniks-sys/coniks-go
+
+CONIKS is a key management system that provides transparency and privacy for end-user public keys. CONIKS protects end-to-end encrypted communications from malicious or compromised communication providers and surveillance by storing users' encryption keys in a tamper-proof and publicly auditable key directory on the server side. This enables the messaging client to automatically authenticate the user's identity and prevent malicious/compromised servers from hijacking secure communications undetected. The library also includes an implementation of Verifiable Random Functions (VRF).
+
+
 # II. Library of Privacy Enhancing Technologies
 
 C/C++
@@ -81,6 +114,13 @@ C/C++
 
   Microsoft SEAL is an easy-to-use open source (MIT licensed) homomorphic encryption library developed by Microsoft's Cryptography and Privacy Research Group. Microsoft SEAL is written in modern standard C++ and is easy to compile and run in many different environments. For more information about the Microsoft SEAL project, see sealcrypto.org.
 
+- palisade: https://palisade-crypto.org/
+
+PALISADE is an open source project that provides an efficient implementation of the Lattice Cryptography building block and leading homomorphic encryption scheme. PALISADE is designed for usability, offering a simpler API, modularity, cross-platform support and integration with hardware accelerators. PALISADE complies with the homomorphic encryption security standard of http://HomomorphicEncryption.org.
+
+- lowmc: https://bitbucket.org/malb/lowmc-helib
+
+lowmc is a FHE-friendly group cryptography scheme for which not much research has been done, but which is certainly interesting. To make it easier to understand, here is an example of a user who has very large data and now needs to encrypt it and put it in the cloud for computational analysis. If FHE encryption is used directly, the ciphertext expansion rate will be too high, making the communication overhead too high. At this point, the data can be encrypted using lowmc, i.e. using a packet cipher, and then the cipher text is sent to the cloud, where it is decrypted using homomorphic decryption, which turns it into a homomorphic encrypted cipher text that can then be computed and analysed.
 
  
 Golang
@@ -92,6 +132,17 @@ Continuous updates are in progress...
 
 
 # III. Blockchain and Zero-Knowledge Proofs
+
+Rust
+
+- bellman: https://github.com/zkcrypto/bellman
+
+bellman is a toolbox for building zk-SNARK circuits. It provides circuit characteristics and primitive structures, as well as basic gadget implementations such as boolean and numeric abstractions.
+
+- Bulletproofs: https://github.com/dalek-cryptography/bulletproofs
+
+This library is currently the fastest implementation of the Bulletproofs scheme, with single and aggregated range proofs, strongly typed multiparty computations, and a programmable constraint system API for proving arbitrary statements
+
 C++
 
 - libsnark: https://github.com/scipr-lab/libsnark
@@ -101,5 +152,31 @@ C++
 - blockchain-crypto-mpc: https://github.com/unboundsecurity/blockchain-crypto-mpc
 
   blockchain-crypto-mpc is an open source library published by Unbound Security that provides cryptographic foundations to solve one of the most difficult challenges associated with crypto assets and blockchain applications. Protects cryptographic signature keys and seed secrets.
+  
+- ibSTARK: https://github.com/elibensasson/libSTARK
+
+The libSTARK library implements scalable and transparent knowledge argumentation (STARK) systems that can be executed with or without zero knowledge (ZK) and can be designed as interactive or non-interactive protocols. zk-STARK has properties such as generality, transparency, scalability and post-quantum cryptographic security.
+
+Solidity
+
+- SolCrypto: https://github.com/HarryR/solcrypto
+
+This library contains Solidity and Python implementations of cryptographic primitives such as ring signatures, proofs of knowledge, Packed ECDSA signatures, etc. They are designed to work together and make it easier to build new cryptosystems using composable primitives. These implementations can be easily switched to secp256k1 or alt_bn128 curves.
+
+- vrf-solidity: https://github.com/witnet/vrf-solidity
+
+vrf-solidity is an open source fast and efficient implementation of verifiable random functions (VRFs) written on Solidity. More precisely, the library implements VRF-proof verification functions based on the elliptic curve (EC) Secp256k1.
+  
+# IV. Quantum Security
+
+- liboqs: https://github.com/open-quantum-safe/liboqs
+
+liboqs is an open source C library for quantum-secure cryptographic algorithms. A collection of open source implementations of quantum-secure key encapsulation mechanisms (KEMs) and digital signature algorithms; liboqs is part of the Open Quantum Security (OQS) project led by Douglas Stebila and Michele Mosca, which aims to develop and integrate quantum-secure cryptography into applications to facilitate deployment and testing in the real world. In particular, OQS provides a prototype for integrating liboqs into TLS and SSH via OpenSSL and OpenSSH.
+
+- rlwekex: https://github.com/dstebila/rlwekex
+
+The software implements a key exchange protocol based on the Ring LWE problem from the following paper: Joppe W. Bos, Craig Costello, Michael Naehrig, Douglas Stebila. Post-quantum key exchange for the TLS protocol from the ring learning with errors problem. in Proc. IEEE Symposium on Security and Privacy (S&P) 2015, pp. 553-570. IEEE, May 2015. doi:10.1109/sp.2015.40, Eprint http://eprint.iacr.org/2014/599.
+
+Translated with www.DeepL.com/Translator (free version)
 
 
