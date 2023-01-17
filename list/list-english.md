@@ -122,6 +122,13 @@ PALISADE is an open source project that provides an efficient implementation of 
 
 lowmc is a FHE-friendly group cryptography scheme for which not much research has been done, but which is certainly interesting. To make it easier to understand, here is an example of a user who has very large data and now needs to encrypt it and put it in the cloud for computational analysis. If FHE encryption is used directly, the ciphertext expansion rate will be too high, making the communication overhead too high. At this point, the data can be encrypted using lowmc, i.e. using a packet cipher, and then the cipher text is sent to the cloud, where it is decrypted using homomorphic decryption, which turns it into a homomorphic encrypted cipher text that can then be computed and analysed.
 
+- pasta: https://github.com/IAIK/hybrid-HE-framework
+
+This repository contains code to test and benchmark symmetric ciphers in hybrid homomorphic encryption. This code is also used in the evaluations of the ciphers in the paper [link](https://eprint.iacr.org/2021/731.pdf).
+
+- awesome-mpc:https://github.com/rdragos/awesome-mpc
+
+A list of mpc related knowledge, including open source libraries, books, courses and more. This is an essential treasure trove for learning MPC.
  
 Golang
 
