@@ -102,6 +102,18 @@ C/C++
 - palisade：https://palisade-crypto.org/
 
   PALISADE是一个开源项目，提供格密码学构建模块和领先的同态加密方案的有效实现。PALISADE是为可用性而设计的，提供更简单的API、模块化、跨平台支持和硬件加速器的集成。 PALISADE符合http://HomomorphicEncryption.org 的同态加密安全标准。
+  
+- lowmc：https://bitbucket.org/malb/lowmc-helib
+
+lowmc是一个FHE友好的分组密码方案，这方面的研究成果还不算多，但确实挺有趣。为了容易理解，这里举个例子，假设用户手里有非常大的数据，现在需要将数据加密后放到云端做计算分析。如果直接使用FHE加密，会导致密文膨胀率过高，使得通信开销过高。此时，便可以用lowmc，即使用分组密码加密数据，然后将密文发送至云端，云端使用同态解密，解密后变成了同态加密的密文，此时便可以进行计算和分析了。
+  
+- pasta：https://github.com/IAIK/hybrid-HE-framework
+
+这个开源库包含了混合同态加密中对称密码的测试和基准的代码。这个代码也用于[论文](https://eprint.iacr.org/2021/731.pdf)中的密码的评估。
+
+- awesome-mpc:https://github.com/rdragos/awesome-mpc
+
+一个与mpc相关的知识列表，包括开放源码库、书籍、课程和更多。这是学习MPC的一个重要宝库。
  
 Golang
 
@@ -132,3 +144,4 @@ C++
 - rlwekex: https://github.com/dstebila/rlwekex
 
   该软件基于以下论文中的 Ring LWE 问题实现密钥交换协议：Joppe W. Bos, Craig Costello, Michael Naehrig, Douglas Stebila. Post-quantum key exchange for the TLS protocol from the ring learning with errors problem. In Proc. IEEE Symposium on Security and Privacy (S&P) 2015, pp. 553-570. IEEE, May 2015. DOI:10.1109/SP.2015.40, Eprint http://eprint.iacr.org/2014/599.
+
