@@ -103,6 +103,10 @@ C/C++
 
   PALISADE是一个开源项目，提供格密码学构建模块和领先的同态加密方案的有效实现。PALISADE是为可用性而设计的，提供更简单的API、模块化、跨平台支持和硬件加速器的集成。 PALISADE符合http://HomomorphicEncryption.org 的同态加密安全标准。
   
+- OpenFHE：https://github.com/openfheorg/openfhe-development
+
+OpenFHE 是一个开源的 FHE 库，包括所有常见 FHE 方案的有效实现：BFV, BGV, CKKS, DM, Threshold-BGV, Threshold-BFV, Threshold-CKKS, PRE-BGV, PRE-BFV, PRE-CKKS。
+  
 - lowmc：https://bitbucket.org/malb/lowmc-helib
 
 lowmc是一个FHE友好的分组密码方案，这方面的研究成果还不算多，但确实挺有趣。为了容易理解，这里举个例子，假设用户手里有非常大的数据，现在需要将数据加密后放到云端做计算分析。如果直接使用FHE加密，会导致密文膨胀率过高，使得通信开销过高。此时，便可以用lowmc，即使用分组密码加密数据，然后将密文发送至云端，云端使用同态解密，解密后变成了同态加密的密文，此时便可以进行计算和分析了。
