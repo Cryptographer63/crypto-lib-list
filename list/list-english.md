@@ -118,6 +118,11 @@ Microsoft SEAL is an easy-to-use open source (MIT licensed) homomorphic encrypti
 
 PALISADE is an open source project that provides an efficient implementation of the Lattice Cryptography building block and leading homomorphic encryption scheme. PALISADE is designed for usability, offering a simpler API, modularity, cross-platform support and integration with hardware accelerators. PALISADE complies with the homomorphic encryption security standard of http://HomomorphicEncryption.org.
 
+- OpenFHE：https://github.com/openfheorg/openfhe-development
+
+OpenFHE is an open source FHE library, including the effective implementation of all common FHE solutions: BFV, BGV, CKKS, DM, Threshold-BGV, Threshold-BFV, Threshold-CKKS, PRE-BGV, PRE-BFV, PRE-CKKS.
+
+
 - lowmc: https://bitbucket.org/malb/lowmc-helib
 
 lowmc is a FHE-friendly group cryptography scheme for which not much research has been done, but which is certainly interesting. To make it easier to understand, here is an example of a user who has very large data and now needs to encrypt it and put it in the cloud for computational analysis. If FHE encryption is used directly, the ciphertext expansion rate will be too high, making the communication overhead too high. At this point, the data can be encrypted using lowmc, i.e. using a packet cipher, and then the cipher text is sent to the cloud, where it is decrypted using homomorphic decryption, which turns it into a homomorphic encrypted cipher text that can then be computed and analysed.
